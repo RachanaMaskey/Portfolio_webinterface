@@ -1,0 +1,110 @@
+.portfolio {
+  position: relative;
+  z-index: 1;
+  
+  .portfolio-heading {
+    margin-left: 70px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+
+    h3 {
+      font-size: 54px;
+      margin-top: -290px;
+      font-weight: 600;
+      background: linear-gradient(to right, #D946EF, #6366F1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    img {
+      margin-left: -120px;
+      margin-top: -420px;
+    }
+    .line {
+      width: 1050px;
+      margin-top:-180px;
+      margin-left: -270px;
+    }
+  }
+
+  .slider {
+    position: relative;
+    z-index: 2;
+    margin: 35px 0px 100px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    .slider-container {
+      position: relative;
+      z-index: 2;
+      min-width: 500px;
+      height: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+
+      .slider-image {
+        width: 420px;
+        height: 200px;
+        margin: -125px auto;
+      }
+
+      .slider-content {
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 200px;
+        position: relative;
+        z-index: 3;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 24px;
+        background: linear-gradient(to right, #B224EF, #7579FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+      }
+
+      p {
+        margin: 0;
+        color: #5F6073;
+      }
+
+      .hr {
+        border: none;
+        height: 2px;
+        background-color: red;
+      }
+    }
+  }
+  .line {
+      @include hr-line;
+      width: 300px;
+    }
+  .circle-box {
+    @include circle-pattern;
+    position: absolute;
+    top: 170px;
+    left: -120px;
+    z-index: 0;
+    gap: 15px;
+    padding: 20px;
+
+    .circle {
+      @include circle-shape;
+      width: 35px;
+      height: 35px;
+      background-color: #EDEEFF;
+    }
+  }
+}

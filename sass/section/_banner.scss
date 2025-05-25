@@ -1,0 +1,44 @@
+.banner{
+    margin-top:40px; 
+    display: flex;
+    flex-direction: row;
+    figure{
+         margin-right: auto;
+    }
+    img{
+        width: 750px;
+        height:500px;
+    }
+    h2{
+        font-size: 76px;
+    }
+    .banner-content{
+        margin-top:30px;
+        margin-left: 70px;
+    }
+    button{
+        background:linear-gradient(to right,#B224EF, #7579FF);
+        width: 200px;
+        height: 56px;
+        border-radius: 8.65px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-right: 36px;
+        padding:16px 30px 16px 30px;
+        font-size: 18px;
+    }
+    i{
+        margin-left:10px;
+    }
+    .arrow img{
+        width:187px;
+        height:187px;
+        transform: rotate(5deg)
+    }
+    .banner-button{
+        display: flex;
+        flex-direction: row;
+    }
+}

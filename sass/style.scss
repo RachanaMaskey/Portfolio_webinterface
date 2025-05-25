@@ -1,0 +1,48 @@
+//css for banner
+@import './section/top-content';
+
+//css for navbar
+@import './components/navbar';
+
+//for circles
+@import './utils/circles';
+
+//for horizontal line
+@import './utils/hr-line';
+
+//css for banner
+@import './section/banner';
+
+//css for skills section
+@import './section/skills';
+@import './components/progress-bar';
+
+//for about me section
+@import './section/aboutme';
+
+//for portfolio section
+@import './section/portfolio';
+
+//for footer
+@import './components/footer';
+
+
+
+// for slick slider
+// @import '../node_modules/slick-carousel/slick/slick';
+// @import '../node_modules/slick-carousel/slick/slick-theme';
+
+//for font
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+
+body{
+    font-family: 'Poppins';
+}
+
+.container{
+    margin:20px;
+}

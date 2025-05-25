@@ -1,0 +1,38 @@
+.skills{
+    margin-left:70px;
+    margin-top:50px;
+    h3{
+        background: linear-gradient(to right, #B224EF, #7579FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        font-size :54px;
+        margin:0px;
+        margin-top:-30px;
+        font-weight: 600;
+    }
+    img{
+        margin-left:-90px;
+        display:inline-block;
+        margin-bottom:30px;
+    }
+    .progress-bar{
+        .circle-box {
+            @include circle-pattern;
+            display: inline;
+            gap: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            .circle {
+                @include circle-shape;
+                width: 35px;
+                height: 35px;
+                // background-color: #EDEEFF;
+                background-color:black;
+            }
+        }  
+    }
+    
+}
