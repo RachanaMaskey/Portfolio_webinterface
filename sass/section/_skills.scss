@@ -19,20 +19,7 @@
         margin-bottom:30px;
     }
     .progress-bar{
-        .circle-box {
-            @include circle-pattern;
-            display: inline;
-            gap: 15px;
-            padding: 20px;
-            margin-top: 20px;
-            .circle {
-                @include circle-shape;
-                width: 35px;
-                height: 35px;
-                // background-color: #EDEEFF;
-                background-color:black;
-            }
-        }  
+        
     }
     
 }
