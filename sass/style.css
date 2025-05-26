@@ -402,10 +402,14 @@
 }
 @media screen and (max-width: 768px) {
   .skills {
-    margin-left: 40px;
+    margin-left: 10px;
+  }
+  .skills .heading {
+    margin-left: 30px;
   }
   .skills .heading .circle-box {
-    left: -127px;
+    gap: 7px;
+    left: -100px;
   }
   .skills .hr-line {
     width: 650px;
@@ -417,6 +421,9 @@
   }
   .skills .right {
     display: none;
+  }
+  .skills .progress-bar {
+    padding: 0px 50px 0px 90px;
   }
 }
 
@@ -527,6 +534,83 @@
 .aboutme .bottom .circle {
   width: 25px;
   height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .aboutme {
+    height: 1000px;
+    width: 768px;
+    margin-right: -5px;
+    -webkit-clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
+            clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
+  }
+  .aboutme .about {
+    font-size: 50px;
+  }
+  .aboutme .contents {
+    width: 550px;
+    height: 150px;
+    left: 100px;
+    border-radius: 40px;
+    margin-top: 240px;
+    padding: 0px 30px 0px 30px;
+  }
+  .aboutme .contents .icon-content img {
+    width: 50px;
+    height: 50px;
+    margin: 15px 0px 0px 25px;
+  }
+  .aboutme .contents .icon-content .first {
+    margin: 15px 0px 0px 40px;
+  }
+  .aboutme .contents img {
+    width: 50px;
+    height: 50px;
+  }
+  .aboutme .contents .percentage {
+    font-size: 15px;
+    text-align: center;
+  }
+  .aboutme .contents p {
+    font-size: 20px;
+  }
+  .aboutme .contents .colombian {
+    width: 150px;
+    height: 203px;
+    border-radius: 60px 60px 40px 40px;
+    top: -57%;
+    left: 225px;
+  }
+  .aboutme .contents .colombian img {
+    width: 100%;
+    height: 105px;
+  }
+  .aboutme .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .aboutme .circle-box .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EDEEFF;
+  }
+  .aboutme .top .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .aboutme .bottom {
+    position: absolute;
+    top: 440px;
+    left: 91%;
+  }
+  .aboutme .bottom .circle {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .portfolio {
@@ -645,6 +729,36 @@
   background-color: #EDEEFF;
   height: 1px;
   width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .portfolio {
+    position: relative;
+    z-index: 1;
+  }
+  .portfolio .circle-box {
+    top: -20px;
+  }
+  .portfolio .portfolio-heading {
+    margin-left: 40px;
+  }
+  .portfolio .portfolio-heading h3 {
+    font-size: 50px;
+    margin-top: -490px;
+  }
+  .portfolio .portfolio-heading img {
+    margin-top: -820px;
+  }
+  .portfolio .portfolio-heading .line {
+    width: 650px;
+    margin-top: -380px;
+  }
+  .portfolio .slider {
+    margin: -195px 0px 100px 20px;
+    gap: 30px;
+  }
+  .portfolio .line {
+    width: 200px;
+  }
 }
 
 footer {

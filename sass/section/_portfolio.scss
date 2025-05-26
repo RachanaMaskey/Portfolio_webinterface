@@ -126,4 +126,41 @@
     @include hr-line;
     width: 300px;
   }
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    z-index: 1;
+
+    // Circle Background Pattern
+    .circle-box {
+      top: -20px;
+    }
+
+    // Portfolio Heading Section
+    .portfolio-heading {
+      margin-left: 40px;
+      h3 {
+        font-size: 50px;
+        margin-top: -490px;
+      }
+      img {
+        margin-top: -820px;
+      }
+      .line {
+        width: 650px;
+        margin-top: -380px;
+      }
+    }
+
+    // Portfolio Slider Section
+    .slider {
+      margin: -195px 0px 100px 20px;
+      gap: 30px;
+    }
+
+    // Small decorative line (used elsewhere?)
+    .line {
+      width: 200px;
+    }    
+  }
 }

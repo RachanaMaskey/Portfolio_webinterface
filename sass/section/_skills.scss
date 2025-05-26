@@ -221,10 +221,12 @@
        
     }
     @media screen and (max-width: 768px) {
-        margin-left:40px;
+        margin-left:10px;
         .heading{
+            margin-left:30px;
             .circle-box {
-                left: -127px;
+                gap:7px;
+                left: -100px;
             }
         }
         .hr-line{
@@ -238,6 +240,10 @@
         }
         .right{
             display: none;
+        }
+        .progress-bar{
+        
+            padding:0px 50px 0px 90px;
         }
     }
 }
