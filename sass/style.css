@@ -1097,11 +1097,41 @@
     margin-top: -150px;
   }
   .portfolio .slider {
-    margin: -5px 0px 100px 20px;
-    gap: 30px;
+    height: 300px;
+    gap: 20px;
+  }
+  .portfolio .slider .slider-container {
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+  }
+  .portfolio .slider .slider-container .slider-image {
+    width: 260px;
+    height: 180px;
+    left: 150px;
+  }
+  .portfolio .slider .slider-container .slider-image img {
+    width: 260px;
+    height: 180px;
+  }
+  .portfolio .slider .slider-container .slider-content {
+    width: 300px;
+    height: 180px;
+    top: 25%;
+    border-radius: 15px;
+  }
+  .portfolio .slider .slider-container h6 {
+    margin-top: 120px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .portfolio .slider .slider-container p {
+    margin: 0px 0px 0px 30px;
+    font-size: 12px;
   }
   .portfolio .line {
     width: 200px;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1127,30 +1157,37 @@
     margin-left: -100px;
   }
   .portfolio .slider {
-    margin: -115px 0px 50px 0px;
-    gap: 20px;
+    height: 250px;
+    margin-top: -190px;
   }
   .portfolio .slider .slider-container {
-    min-width: 250px;
-    height: 105px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-  }
-  .portfolio .slider .slider-container .slider-image {
-    width: 220px;
-    height: 200px;
-    margin: -85px auto;
-  }
-  .portfolio .slider .slider-container .slider-content {
-    margin-top: 90px;
+    width: 250px;
+    height: 300px;
     margin-left: 20px;
   }
+  .portfolio .slider .slider-container .slider-image {
+    width: 280px;
+    height: 150px;
+    left: 160px;
+  }
+  .portfolio .slider .slider-container .slider-image img {
+    width: 280px;
+    height: 150px;
+  }
+  .portfolio .slider .slider-container .slider-content {
+    width: 320px;
+    height: 160px;
+    top: 20%;
+    border-radius: 15px;
+  }
   .portfolio .slider .slider-container h6 {
-    font-size: 12px;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 11px;
   }
   .portfolio .slider .slider-container p {
-    font-size: 9px;
+    margin: 0px 0px 0px 20px;
+    font-size: 8px;
   }
   .portfolio .line {
     background-color: #EDEEFF;
