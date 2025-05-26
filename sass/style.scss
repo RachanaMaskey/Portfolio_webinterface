@@ -16,6 +16,8 @@
 
 //css for skills section
 @import './section/skills';
+
+//css for skills progress bar
 @import './components/progress-bar';
 
 //for about me section
@@ -35,8 +37,8 @@
 
 //for font
 @font-face {
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format('truetype');
 }
 
 

@@ -90,6 +90,46 @@
   margin-top: 10px;
   margin-right: 36px;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 655px;
+    height: 40px;
+    margin: 0px 20px 0px 10px;
+    padding: 0px 10px 0px 10px;
+    font-size: 12px;
+    position: fixed;
+    top: 40px;
+    z-index: 10;
+  }
+  .navbar .nav-list {
+    gap: 10px;
+  }
+  .navbar .nav-name {
+    display: flex;
+    gap: 7px;
+    margin-left: 10px;
+  }
+  .navbar figure {
+    margin-top: 6px;
+  }
+  .navbar span {
+    margin-top: 12px;
+  }
+  .navbar .nav-items {
+    gap: 15px;
+  }
+  .navbar .nav-items span:hover {
+    text-underline-offset: 10px;
+  }
+  .navbar button {
+    width: 100px;
+    height: 20px;
+    border-radius: 5.65px;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 10px;
+  }
+}
 
 .banner {
   margin-top: 90px;
@@ -455,16 +495,38 @@
   position: relative;
   z-index: 1;
 }
+.portfolio .circle-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 170px;
+  left: -120px;
+  z-index: 0;
+  gap: 15px;
+  padding: 20px;
+}
+.portfolio .circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #EDEEFF;
+}
 .portfolio .portfolio-heading {
-  margin-left: 70px;
   position: relative;
   z-index: 2;
+  margin-left: 70px;
   display: flex;
 }
 .portfolio .portfolio-heading h3 {
   font-size: 54px;
-  margin-top: -290px;
   font-weight: 600;
+  margin-top: -290px;
   background: linear-gradient(to right, #D946EF, #6366F1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -484,6 +546,7 @@
 .portfolio .slider {
   position: relative;
   z-index: 2;
+  max-width: 90%;
   margin: 35px 0px 100px 20px;
   display: flex;
   flex-direction: row;
@@ -494,23 +557,32 @@
   z-index: 2;
   min-width: 500px;
   height: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 40px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 .portfolio .slider .slider-container .slider-image {
   width: 420px;
   height: 200px;
   margin: -125px auto;
 }
+.portfolio .slider .slider-container .slider-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.portfolio .slider .slider-container .slider-image img:hover {
+  transform: scale(1.05);
+}
 .portfolio .slider .slider-container .slider-content {
-  text-align: left;
-  margin-left: 40px;
-  margin-top: 200px;
   position: relative;
   z-index: 3;
+  margin-top: 200px;
+  margin-left: 40px;
+  text-align: left;
 }
 .portfolio .slider .slider-container h6 {
   margin: 0;
@@ -535,28 +607,6 @@
   background-color: #EDEEFF;
   height: 1px;
   width: 300px;
-}
-.portfolio .circle-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: -moz-max-content;
-  width: max-content;
-  position: absolute;
-  top: 170px;
-  left: -120px;
-  z-index: 0;
-  gap: 15px;
-  padding: 20px;
-}
-.portfolio .circle-box .circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  background-color: #EDEEFF;
 }
 
 footer {
@@ -621,7 +671,7 @@ footer .left .circle {
 
 @font-face {
   font-family: "Poppins";
-  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
 }
 body {
   font-family: "Poppins";

@@ -58,4 +58,42 @@
         margin-top: 10px;
         margin-right: 36px;
     }
+    @media screen and (max-width: 768px) {
+        width:655px;
+        height:40px;
+        margin:0px 20px 0px 10px;
+        padding:0px 10px 0px 10px;
+        font-size: 12px;
+        position: fixed;
+        top: 40px;
+        z-index: 10;
+        .nav-list{
+            gap:10px;
+        }
+        .nav-name{
+            display:flex;
+            gap:7px;
+            margin-left:10px;
+        }
+        figure{
+            margin-top:6px;
+        }
+        span{
+            margin-top:12px;
+        }
+        .nav-items{
+            gap:15px;
+        }
+        .nav-items span:hover{
+            text-underline-offset: 10px; 
+        }
+        button{
+            width: 100px;
+            height: 20px;
+            border-radius: 5.65px;
+            margin-top: 10px;
+            margin-right: 16px;
+            font-size: 10px;
+        }
+    } 
 }
