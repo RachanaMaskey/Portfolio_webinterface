@@ -220,4 +220,24 @@
         }
        
     }
+    @media screen and (max-width: 768px) {
+        margin-left:40px;
+        .heading{
+            .circle-box {
+                left: -127px;
+            }
+        }
+        .hr-line{
+            width: 650px;          
+        }
+        .left{
+            position: absolute;
+            top: 720px;
+            left:-155px;
+            
+        }
+        .right{
+            display: none;
+        }
+    }
 }

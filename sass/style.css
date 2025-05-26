@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .top-content {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .top-content .circle-box {
   display: grid;
@@ -27,6 +27,11 @@
   position: absolute;
   top: 140px;
   left: 1335px;
+}
+@media screen and (max-width: 768px) {
+  .top-content .circle-box {
+    display: none;
+  }
 }
 
 .navbar {
@@ -174,6 +179,20 @@
 .banner .banner-button {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-top: 30px;
+  }
+  .banner figure {
+    display: none;
+  }
+  .banner h2 {
+    font-size: 66px;
+  }
+  .banner .banner-content {
+    width: 500px;
+  }
 }
 
 .skills {
@@ -380,6 +399,25 @@
 .skills .progress-bar .progress-70 .caption {
   text-align: center;
   margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    margin-left: 40px;
+  }
+  .skills .heading .circle-box {
+    left: -127px;
+  }
+  .skills .hr-line {
+    width: 650px;
+  }
+  .skills .left {
+    position: absolute;
+    top: 720px;
+    left: -155px;
+  }
+  .skills .right {
+    display: none;
+  }
 }
 
 .aboutme {
