@@ -1080,8 +1080,7 @@
     z-index: 1;
   }
   .portfolio .circle-box {
-    top: 130px;
-    left: -140px;
+    display: none;
   }
   .portfolio .portfolio-heading {
     margin-left: 40px;
@@ -1107,13 +1106,7 @@
 }
 @media screen and (max-width: 480px) {
   .portfolio .circle-box {
-    top: -45px;
-    left: -65px;
-    gap: 5px;
-  }
-  .portfolio .circle-box .circle {
-    width: 15px;
-    height: 15px;
+    display: none;
   }
   .portfolio .portfolio-heading {
     margin-left: 0px;
@@ -1205,10 +1198,6 @@ footer .circle-box .circle {
   height: 16px;
 }
 footer .right {
-  margin-top: -30px;
-  margin-left: -5px;
-}
-footer .left {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -1220,10 +1209,14 @@ footer .left {
   margin-left: auto;
   margin-right: -10px;
 }
-footer .left .circle {
+footer .right .circle {
   background-color: #1B1C37;
   width: 11px;
   height: 11px;
+}
+footer .left {
+  margin-top: -30px;
+  margin-left: -5px;
 }
 @media screen and (max-width: 768px) {
   footer {

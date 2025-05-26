@@ -141,8 +141,7 @@
 
     // Circle Background Pattern
     .circle-box {
-      top: 130px;
-      left: -140px;
+      display: none;
     }
 
     // Portfolio Heading Section
@@ -175,13 +174,7 @@
   @media screen and (max-width: 480px) {
     // Circle Background Pattern
     .circle-box {
-      top: -45px;
-      left: -65px;
-      gap: 5px;
-      .circle {
-        width: 15px;
-        height: 15px;
-      }
+      display: none;
     }
 
     // Portfolio Heading Section
