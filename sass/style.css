@@ -20,7 +20,7 @@
 }
 .top-content .left {
   position: absolute;
-  top: 580px;
+  top: 550px;
   left: -115px;
 }
 .top-content .right {
@@ -40,6 +40,9 @@
   display: flex;
   justify-content: space-between;
   font-size: 15px;
+  position: fixed;
+  top: 60px;
+  z-index: 10;
 }
 .navbar .nav-list {
   display: flex;
@@ -89,7 +92,7 @@
 }
 
 .banner {
-  margin-top: 40px;
+  margin-top: 90px;
   display: flex;
   flex-direction: row;
 }

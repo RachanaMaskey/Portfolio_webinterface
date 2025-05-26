@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
     font-size:15px;
+    position: fixed;
+    top: 60px;
+    z-index: 10;
     .nav-list{
         display:flex;
         flex-direction: row;
