@@ -1,15 +1,15 @@
 .portfolio {
   position: relative;
-  z-index: 1;
-  overflow: visible;
+  // z-index:0;
+  // overflow: visible;
 
   // Circle Background Pattern
   .circle-box {
     @include circle-pattern;
     position: absolute;
-    top: 170px;
+    top: 160px;
     left: -120px;
-    z-index: 0;
+    z-index: 1;
     gap: 15px;
     padding: 20px;
 
@@ -24,7 +24,7 @@
   // Portfolio Heading Section
   .portfolio-heading {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     margin-left: 70px;
     display: flex;
 
@@ -55,36 +55,31 @@
   // Portfolio Slider Section
   .slider {
     position: relative;
-    z-index: 2;
-    max-width: 100%;
+    z-index: 3;
+    width: 100%;
     height:400px;
-    margin: -80px 0px 00px 20px;
+    margin-top:-90px;
+    gap: 20px;
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-
+    
+  
     .slider-container {
       position: relative;
-      z-index: 2;
-      min-width: 500px;
-      height: 250px;
-      display: flex;
-      flex-direction: column;
-      background-color: #fff;
-      border-radius: 40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      overflow: visible;
-      padding-top: 130px;
-
+      z-index: 3;
+      width: 250px;
+      height: 300px;
+      margin-left: 30px;
+    
       .slider-image {
-        width: 420px;
+        width: 210px;
         height: 200px;
-        margin: -125px auto;
-
+        border-radius: 10px;
+        position: absolute;
+        z-index: 3;
+        left:130px;;
+        transform: translateX(-50%);
+        box-shadow: 0px 4px 24px 0px #647CFF2E;
         img {
-          width: 100%;
-          border-radius: 10px;
           transition: transform 0.3s ease;
 
           &:hover {
@@ -94,15 +89,23 @@
       }
 
       .slider-content {
-        position: relative;
+        position: absolute;
         z-index: 3;
-        margin-top: 200px;
-        margin-left: 40px;
+        width:470px;
+        height:250px;
+        top:45%;
+        border-radius:25px;
+        box-shadow: 0px 4px 24px 0px #4343432E;
+        margin-top: 0px;
+        // margin-left: 40px;
         text-align: left;
+        margin-bottom: 20px;
       }
 
       h6 {
-        margin: 0;
+        margin-top:140px;
+        margin-bottom: 10px;
+        margin-left:40px;
         font-size: 24px;
         background: linear-gradient(to right, #B224EF, #7579FF);
         -webkit-background-clip: text;
@@ -110,17 +113,18 @@
         background-clip: text;
         color: transparent;
         display: inline-block;
+        font-weight:600;
+        line-height:105%;
+        letter-spacing:0%;
       }
-
       p {
-        margin: 0;
+        padding-top:0px;
+        margin-left:40px;
         color: #5F6073;
-      }
-
-      .hr {
-        border: none;
-        height: 2px;
-        background-color: red;
+        font-size:16px;
+        font-weight:400;
+        // line-height:105%;
+        letter-spacing:0%;
       }
     }
   }
