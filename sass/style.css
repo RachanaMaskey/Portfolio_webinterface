@@ -111,8 +111,9 @@
   margin-left: 70px;
   margin-top: 50px;
   height: auto;
+  position: relative;
 }
-.skills h3 {
+.skills .heading h3 {
   background: linear-gradient(to right, #B224EF, #7579FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -124,16 +125,64 @@
   margin-top: -30px;
   font-weight: 600;
 }
-.skills img {
+.skills .heading img {
   margin-left: -90px;
   display: inline-block;
   margin-bottom: 30px;
+}
+.skills .heading .circle-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 55px;
+  left: -150px;
+  z-index: 0;
+  gap: 5px;
+  padding: 20px;
+}
+.skills .heading .circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #EDEEFF;
 }
 .skills .hr-line {
   background-color: #EDEEFF;
   height: 1px;
   width: 1300px;
-  margin: 0px;
+  margin: 20px 0px;
+}
+.skills .circle-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.skills .circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #EDEEFF;
+}
+.skills .left {
+  position: absolute;
+  top: 650px;
+  left: -195px;
+}
+.skills .right {
+  position: absolute;
+  top: 400px;
+  left: 1200px;
 }
 .skills .progress-bar {
   display: flex;
@@ -141,6 +190,7 @@
   flex-wrap: wrap;
   gap: 60px;
   padding: 0px 50px 0px 130px;
+  position: relative;
 }
 .skills .progress-bar .hr-line {
   background-color: #EDEEFF;
