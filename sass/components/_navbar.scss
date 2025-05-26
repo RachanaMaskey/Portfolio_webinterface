@@ -12,6 +12,9 @@
     position: fixed;
     top: 60px;
     z-index: 10;
+    .menu-bar{
+        display:none;
+    }
     .nav-list{
         display:flex;
         flex-direction: row;
@@ -96,4 +99,44 @@
             font-size: 10px;
         }
     } 
+    @media screen and (max-width: 430px){
+        width:370px;
+        height:40px;
+        margin:0px 60px 0px -10px;
+        padding:0px 10px 0px 0px;
+        border-radius: 8px;
+        font-size:12px;
+        top: 50px;
+        .menu-bar{
+            display:block;
+            i{
+                font-size: 19px;
+                font-weight: bold;
+                color:white;
+            }
+        }
+        button{
+            background-color:transparent;
+            width: 50px;
+            height: 40px;
+            border-radius:0px;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+        .nav-name{
+            margin-left:21px;
+        }
+        figure{
+            margin-top:7px;
+        }
+        span{
+            margin-top:12px;
+        }
+        .nav-items{
+            display:none;
+        }
+        .contact{
+            display:none;
+        }
+    }
 }

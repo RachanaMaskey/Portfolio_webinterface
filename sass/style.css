@@ -49,6 +49,9 @@
   top: 60px;
   z-index: 10;
 }
+.navbar .menu-bar {
+  display: none;
+}
 .navbar .nav-list {
   display: flex;
   flex-direction: row;
@@ -135,6 +138,48 @@
     font-size: 10px;
   }
 }
+@media screen and (max-width: 430px) {
+  .navbar {
+    width: 370px;
+    height: 40px;
+    margin: 0px 60px 0px -10px;
+    padding: 0px 10px 0px 0px;
+    border-radius: 8px;
+    font-size: 12px;
+    top: 50px;
+  }
+  .navbar .menu-bar {
+    display: block;
+  }
+  .navbar .menu-bar i {
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+  }
+  .navbar button {
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .navbar .nav-name {
+    margin-left: 21px;
+  }
+  .navbar figure {
+    margin-top: 7px;
+  }
+  .navbar span {
+    margin-top: 12px;
+  }
+  .navbar .nav-items {
+    display: none;
+  }
+  .navbar .contact {
+    display: none;
+  }
+}
 
 .banner {
   margin-top: 90px;
@@ -192,6 +237,42 @@
   }
   .banner .banner-content {
     width: 500px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .banner {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .banner h2 {
+    font-size: 50px;
+  }
+  .banner p {
+    font-size: 10px;
+    margin: 0px;
+  }
+  .banner .banner-content {
+    width: 275px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .banner button {
+    width: 180px;
+    height: 40px;
+    border-radius: 8.65px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 25px;
+    font-size: 11px;
+  }
+  .banner i {
+    margin-left: 5px;
+  }
+  .banner .arrow img {
+    width: 107px;
+    height: 107px;
+    margin-top: 20px;
   }
 }
 
