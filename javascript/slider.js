@@ -1,25 +1,29 @@
-$(document).ready(function () {
-  $('.slider').slick({
-    slidesToShow: 1,             // How many slides visible
-    slidesToScroll: 1,           // Scroll 1 at a time
-    infinite: true,
-    dots: true,                  // Optional: navigation dots
-    arrows: true,                // Optional: left/right arrows
-    autoplay: true,              // Optional: autoplay
-    autoplaySpeed: 3000,         // Autoplay interval in ms
-    responsive: [
-      // {
-      //   breakpoint: 768,         // Mobile breakpoint
-      //   settings: {
-      //     slidesToShow: 1
-      //   }
-      // },
-      // {
-      //   breakpoint: 1024,
-      //   settings: {
-      //     slidesToShow: 2
-      //   }
-      // }
-    ]
-  });
-});
+$(document).ready(function(){
+   $('.slider').slick({
+      dots: true,
+      arrows: true,
+      infinite:false,
+      speed: 300,
+      slidesToShow: 2.5,
+      slidesToScroll: 1,
+      responsive: [
+       {
+         breakpoint: 768,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 1
+         }
+       },
+       {
+         breakpoint: 350,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1
+         }
+       }
+       // You can unslick at a given breakpoint now by adding:
+       // settings: "unslick"
+       // instead of a settings object
+     ]
+   });
+ });
