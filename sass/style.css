@@ -2,6 +2,32 @@
 .top-content {
   padding-top: 40px;
 }
+.top-content .circle-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.top-content .circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #EDEEFF;
+}
+.top-content .left {
+  position: absolute;
+  top: 580px;
+  left: -115px;
+}
+.top-content .right {
+  position: absolute;
+  top: 140px;
+  left: 1335px;
+}
 
 .navbar {
   width: 1255px;

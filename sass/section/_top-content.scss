@@ -1,3 +1,25 @@
 .top-content {
         padding-top:40px;
+        .circle-box {
+        @include circle-pattern;
+
+        .circle {
+        @include circle-shape;
+        width: 30px;
+        height: 30px;
+        background-color: #EDEEFF;
+        }
+    }
+    .left{
+        position: absolute;
+        top: 580px;
+        left:-115px;
+        
+    }
+    .right{
+        position: absolute;
+        top: 140px;
+        left:1335px;
+        // bottom:10px;
+    }
 }
