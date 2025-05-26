@@ -63,7 +63,7 @@
     }
     @media screen and (max-width: 768px) {
         width:655px;
-        height:40px;
+        height:55px;
         margin:0px 20px 0px 10px;
         padding:0px 10px 0px 10px;
         font-size: 12px;
@@ -74,15 +74,14 @@
             gap:10px;
         }
         .nav-name{
-            display:flex;
             gap:7px;
             margin-left:10px;
         }
         figure{
-            margin-top:6px;
+            margin-top:14px;
         }
         span{
-            margin-top:12px;
+            margin-top:18px;
         }
         .nav-items{
             gap:15px;
@@ -92,11 +91,11 @@
         }
         button{
             width: 100px;
-            height: 20px;
+            height: 30px;
             border-radius: 5.65px;
-            margin-top: 10px;
+            margin-top: 12px;
             margin-right: 16px;
-            font-size: 10px;
+            font-size: 12px;
         }
     } 
     @media screen and (max-width: 430px){

@@ -101,7 +101,7 @@
 @media screen and (max-width: 768px) {
   .navbar {
     width: 655px;
-    height: 40px;
+    height: 55px;
     margin: 0px 20px 0px 10px;
     padding: 0px 10px 0px 10px;
     font-size: 12px;
@@ -113,15 +113,14 @@
     gap: 10px;
   }
   .navbar .nav-name {
-    display: flex;
     gap: 7px;
     margin-left: 10px;
   }
   .navbar figure {
-    margin-top: 6px;
+    margin-top: 14px;
   }
   .navbar span {
-    margin-top: 12px;
+    margin-top: 18px;
   }
   .navbar .nav-items {
     gap: 15px;
@@ -131,11 +130,11 @@
   }
   .navbar button {
     width: 100px;
-    height: 20px;
+    height: 30px;
     border-radius: 5.65px;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right: 16px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -405,6 +404,9 @@
   text-align: center;
   margin-top: 15px;
 }
+.skills .progress-bar .progress-90-second {
+  display: none;
+}
 .skills .progress-bar .progress-80 .progress-circle-80 {
   width: 200px;
   height: 200px;
@@ -505,6 +507,177 @@
   }
   .skills .progress-bar {
     padding: 0px 50px 0px 90px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .skills {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .skills .heading {
+    margin-left: 0px;
+  }
+  .skills .heading h3 {
+    font-size: 30px;
+    margin-top: -30px;
+    font-weight: 600;
+  }
+  .skills .heading img {
+    margin-left: -50px;
+    margin-bottom: 15px;
+    width: 85px;
+    height: 50px;
+  }
+  .skills .heading .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    z-index: 0;
+    gap: 3px;
+    padding: 20px;
+  }
+  .skills .heading .circle-box .circle {
+    width: 8px;
+    height: 8px;
+  }
+  .skills .hr-line {
+    width: 350px;
+  }
+  .skills .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .skills .circle-box .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #EDEEFF;
+  }
+  .skills .left {
+    position: absolute;
+    top: 650px;
+    left: -195px;
+  }
+  .skills .right {
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+  }
+  .skills .progress-bar {
+    gap: 20px;
+    padding: 0px 0px 0px 10px;
+  }
+  .skills .progress-bar .hr-line {
+    width: 300px;
+  }
+  .skills .progress-bar .progress-90 {
+    display: block;
+  }
+  .skills .progress-bar .progress-90 .progress-circle-90 {
+    width: 200px;
+    height: 200px;
+  }
+  .skills .progress-bar .progress-90 .progress-circle-90 circle {
+    stroke-width: 24;
+  }
+  .skills .progress-bar .progress-90 .progress-circle-90 .progress {
+    stroke-dasharray: 365.5; /* 2πr, with r = 60 */
+    stroke-dashoffset: 46.55; /* 90% */
+  }
+  .skills .progress-bar .progress-90 .progress-circle-90 .percentage {
+    font-size: 12px;
+    margin: 5px 0px 0px 2px;
+  }
+  .skills .progress-bar .progress-90 .caption {
+    margin-top: 11px;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 svg {
+    transform: rotate(-150deg);
+    width: 100%;
+    height: 100%;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 circle {
+    fill: none;
+    stroke-width: 24;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 .bg {
+    stroke: #e9e9e9;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 .progress {
+    stroke: #7579FF;
+    stroke-linecap: round;
+    stroke-dasharray: 337; /* 2πr, with r = 60 */
+    stroke-dashoffset: 37.7; /* 90% */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  .skills .progress-bar .progress-80 .progress-circle-80 .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin: 5px 0px 0px 2px;
+  }
+  .skills .progress-bar .progress-80 .caption {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 svg {
+    transform: rotate(-150deg);
+    width: 100%;
+    height: 100%;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 circle {
+    fill: none;
+    stroke-width: 24;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 .bg {
+    stroke: #e9e9e9;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 .progress {
+    stroke: #7579FF;
+    stroke-linecap: round;
+    stroke-dasharray: 280; /* 2πr, with r = 60 */
+    stroke-dashoffset: 37.7; /* 90% */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  .skills .progress-bar .progress-70 .progress-circle-70 .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin: 5px 0px 0px 2px;
+  }
+  .skills .progress-bar .progress-70 .caption {
+    text-align: center;
+    margin-top: 15px;
   }
 }
 
@@ -618,7 +791,7 @@
 }
 @media screen and (max-width: 768px) {
   .aboutme {
-    height: 1000px;
+    height: 750px;
     width: 768px;
     margin-right: -5px;
     -webkit-clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
@@ -629,7 +802,7 @@
   }
   .aboutme .contents {
     width: 550px;
-    height: 150px;
+    height: 160px;
     left: 100px;
     border-radius: 40px;
     margin-top: 240px;
@@ -686,11 +859,95 @@
   .aboutme .bottom {
     position: absolute;
     top: 440px;
-    left: 91%;
+    left: 92%;
   }
   .aboutme .bottom .circle {
     width: 15px;
     height: 15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .aboutme {
+    width: 430px;
+    height: 580px;
+    -webkit-clip-path: path("M430,0 L430,250 C330,350 100,200 0,280 L0,0 Z");
+            clip-path: path("M430,0 L430,250 C330,350 100,200 0,280 L0,0 Z");
+  }
+  .aboutme .about {
+    font-size: 25px;
+    padding-top: 15px;
+  }
+  .aboutme .contents {
+    width: 250px;
+    height: 90px;
+    left: 60px;
+    border-radius: 18px;
+    margin-top: 125px;
+    padding: 0px 30px 0px 30px;
+  }
+  .aboutme .contents .icon-content img {
+    width: 25px;
+    height: 25px;
+    margin: 15px 0px 0px 10px;
+  }
+  .aboutme .contents .icon-content .first {
+    margin: 15px 0px 0px 20px;
+  }
+  .aboutme .contents img {
+    width: 50px;
+    height: 50px;
+  }
+  .aboutme .contents .percentage {
+    font-size: 12px;
+    text-align: center;
+  }
+  .aboutme .contents p {
+    font-size: 10px;
+  }
+  .aboutme .contents .colombian {
+    width: 90px;
+    height: 115px;
+    border-radius: 28px 28px 20px 20px;
+    top: -50%;
+    left: 110px;
+  }
+  .aboutme .contents .colombian img {
+    width: 100%;
+    height: 55px;
+    margin-top: -10px;
+  }
+  .aboutme .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .aboutme .circle-box .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EDEEFF;
+  }
+  .aboutme .top {
+    gap: 3px;
+    top: 80px;
+    left: 5px;
+  }
+  .aboutme .top .circle {
+    width: 5px;
+    height: 5px;
+  }
+  .aboutme .bottom {
+    position: absolute;
+    top: 225px;
+    left: 84%;
+    gap: 4px;
+  }
+  .aboutme .bottom .circle {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -817,28 +1074,89 @@
     z-index: 1;
   }
   .portfolio .circle-box {
-    top: -20px;
+    top: 130px;
+    left: -140px;
   }
   .portfolio .portfolio-heading {
     margin-left: 40px;
   }
   .portfolio .portfolio-heading h3 {
     font-size: 50px;
-    margin-top: -490px;
+    margin-top: -250px;
   }
   .portfolio .portfolio-heading img {
-    margin-top: -820px;
+    margin-top: -350px;
   }
   .portfolio .portfolio-heading .line {
     width: 650px;
-    margin-top: -380px;
+    margin-top: -150px;
   }
   .portfolio .slider {
-    margin: -195px 0px 100px 20px;
+    margin: -5px 0px 100px 20px;
     gap: 30px;
   }
   .portfolio .line {
     width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .circle-box {
+    top: -45px;
+    left: -65px;
+    gap: 5px;
+  }
+  .portfolio .circle-box .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .portfolio .portfolio-heading {
+    margin-left: 0px;
+  }
+  .portfolio .portfolio-heading h3 {
+    font-size: 24px;
+    margin-top: -290px;
+  }
+  .portfolio .portfolio-heading img {
+    width: 60px;
+    height: 9px;
+    margin-left: -60px;
+    margin-top: -260px;
+  }
+  .portfolio .portfolio-heading .line {
+    width: 400px;
+    margin-top: -240px;
+    margin-left: -100px;
+  }
+  .portfolio .slider {
+    margin: -115px 0px 50px 0px;
+    gap: 20px;
+  }
+  .portfolio .slider .slider-container {
+    min-width: 250px;
+    height: 105px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  .portfolio .slider .slider-container .slider-image {
+    width: 220px;
+    height: 200px;
+    margin: -85px auto;
+  }
+  .portfolio .slider .slider-container .slider-content {
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+  .portfolio .slider .slider-container h6 {
+    font-size: 12px;
+  }
+  .portfolio .slider .slider-container p {
+    font-size: 9px;
+  }
+  .portfolio .line {
+    background-color: #EDEEFF;
+    height: 1px;
+    width: 125px;
   }
 }
 
@@ -900,6 +1218,59 @@ footer .left .circle {
   background-color: #1B1C37;
   width: 11px;
   height: 11px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 90px;
+    margin: 0px -10px -10px -10px;
+    border-radius: 40px 40px 0px 0px;
+  }
+  footer .footer-icons {
+    gap: 20px;
+    padding-top: 20px;
+  }
+  footer .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  footer p {
+    font-size: 10px;
+    margin-top: 12px;
+  }
+  footer .right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+    gap: 5px;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: -10px;
+  }
+  footer .right .circle {
+    background-color: #1B1C37;
+    width: 8px;
+    height: 8px;
+  }
+  footer .left {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+    gap: 5px;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-right: 0px;
+  }
+  footer .left .circle {
+    background-color: #1B1C37;
+    width: 11px;
+    height: 11px;
+  }
 }
 
 @font-face {
