@@ -25,8 +25,12 @@
     @media screen and (max-width: 770px) {
         .left{
             position: absolute;
-            top: 122%;
-            left:-10%;
+            top: 220%;
+            left:-12%;
+             .circle {
+                width: 25px;
+                height: 25px;
+            }
             
         }
         .right{
@@ -35,30 +39,12 @@
         
     }
     @media screen and (max-width: 430px) {
-        .hr-line{
-            width: 350px; 
-        }
-        .circle-box {
-            @include circle-pattern;
-
-            .circle {
-            @include circle-shape;
-            width: 35px;
-            height: 35px;
-            background-color: #EDEEFF;
-            }
-        }
         .left{
-            position: absolute;
-            top: 650px;
-            left:-195px;
+            display: none;
             
         }
         .right{
-            position: absolute;
-            top: 400px;
-            left:1200px;
-            // bottom:10px;
+          display: none;
         }
         
     }

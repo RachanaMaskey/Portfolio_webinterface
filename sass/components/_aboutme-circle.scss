@@ -17,7 +17,7 @@
     }
     .bottom{
         position: absolute;
-         z-index: 9;
+        z-index: 9;
         top: 2300px;
         right:-10px;
         .circle {
@@ -34,15 +34,17 @@
             }
         }
         .top{
+            gap:5px;
             .circle {
                 width:15px;
                 height:15px;
             }
+            top: 2000px;
         }
         .bottom{
-            position: absolute;
-            top: 440px;
-            left: 92%;
+            top: 2300px;
+            right:-60px;
+            gap:7px;
             .circle {
                 width:15px;
                 height:15px;
@@ -60,17 +62,16 @@
         }
         .top{
             gap:3px;
-            top: 80px;
-            left: 5px;
+            top: 1550px;
+            left:-10px;
             .circle {
                 width:5px;
                 height:5px;
             }
         }
         .bottom{
-            position: absolute;
-            top: 225px;
-            left: 84%;
+            top: 1725px;
+            right:-10px;
             gap:4px;
             .circle {
                 width:8px;
