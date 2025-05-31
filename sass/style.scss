@@ -4,8 +4,11 @@
 //for horizontal line
 @import './utils/hr-line';
 
-//css for banner
-@import './section/top-content';
+//css for bannersection circle pattern
+@import './components/top-circle';
+
+//css for skills section circle pattern
+@import './components/skills-circle';
 
 //css for navbar
 @import './components/navbar';
@@ -52,7 +55,7 @@ body{
     margin:0px 70px;
     overflow: hidden;
     position: relative;
-    z-index:10;
+    z-index:9;
     @media screen and (max-width: 770px) {
         margin:0px 50px;
     }

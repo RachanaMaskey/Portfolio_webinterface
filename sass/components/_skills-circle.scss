@@ -1,0 +1,88 @@
+.skills-circle{
+    .circle-box {
+        @include circle-pattern;
+        position: absolute;
+        top: 55px;
+        left: -150px;
+        z-index: 0;
+        gap: 5px;
+        padding: 20px;
+        .circle {
+        @include circle-shape;
+        width: 15px;
+        height: 15px;
+        background-color: #EDEEFF;
+        }
+    }
+      .hr-line{
+        @include hr-line;
+        width: 1300px;
+        margin:20px 0px;
+        
+    }
+    .circle-box {
+        @include circle-pattern;
+
+        .circle {
+        @include circle-shape;
+        width: 35px;
+        height: 35px;
+        background-color: #EDEEFF;
+        }
+    }
+    .left{
+        position: absolute;
+        top: 650px;
+        left:-195px;
+        
+    }
+    .right{
+        position: absolute;
+        top: 400px;
+        left:1200px;
+        // bottom:10px;
+    }
+    @media screen and (max-width: 770px) {
+         .hr-line{
+            width: 650px;          
+        }
+        .left{
+            position: absolute;
+            top: 720px;
+            left:-155px;
+            
+        }
+        .right{
+            display: none;
+        }
+        
+    }
+    @media screen and (max-width: 430px) {
+        .hr-line{
+            width: 350px; 
+        }
+        .circle-box {
+            @include circle-pattern;
+
+            .circle {
+            @include circle-shape;
+            width: 35px;
+            height: 35px;
+            background-color: #EDEEFF;
+            }
+        }
+        .left{
+            position: absolute;
+            top: 650px;
+            left:-195px;
+            
+        }
+        .right{
+            position: absolute;
+            top: 400px;
+            left:1200px;
+            // bottom:10px;
+        }
+        
+    }
+}
