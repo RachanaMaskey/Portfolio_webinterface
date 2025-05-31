@@ -1,0 +1,79 @@
+.circle-box {
+        @include circle-pattern;
+        .circle {
+            @include circle-shape;
+            background-color:#EDEEFF;
+        }
+    }
+    .top{
+        position: absolute;
+        top: 100px;
+        left:-50px;
+        .circle {
+            width:20px;
+            height:20px;
+        }
+    }
+    .bottom{
+        position: absolute;
+        top: 800px;
+        left: 89%;
+        .circle {
+            width:25px;
+            height:25px;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        .circle-box {
+            @include circle-pattern;
+            .circle {
+                @include circle-shape;
+                background-color:#EDEEFF;
+            }
+        }
+        .top{
+            .circle {
+                width:15px;
+                height:15px;
+            }
+        }
+        .bottom{
+            position: absolute;
+            top: 440px;
+            left: 92%;
+            .circle {
+                width:15px;
+                height:15px;
+            }
+        }
+        
+    }
+    @media screen and (max-width: 430px) {
+        .circle-box {
+            @include circle-pattern;
+            .circle {
+                @include circle-shape;
+                background-color:#EDEEFF;
+            }
+        }
+        .top{
+            gap:3px;
+            top: 80px;
+            left: 5px;
+            .circle {
+                width:5px;
+                height:5px;
+            }
+        }
+        .bottom{
+            position: absolute;
+            top: 225px;
+            left: 84%;
+            gap:4px;
+            .circle {
+                width:8px;
+                height:8px;
+            }
+        }
+        
+    }

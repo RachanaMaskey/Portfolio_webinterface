@@ -10,6 +10,9 @@
 //css for skills section circle pattern
 @import './components/skills-circle';
 
+//css for aboutme section circle pattern
+@import './components/aboutme-circle';
+
 //css for navbar
 @import './components/navbar';
 
@@ -47,6 +50,8 @@
 
 body{
     font-family: 'Poppins';
+    padding: 0px;
+    margin: 0px;
 }
 
 .container{
@@ -65,4 +70,12 @@ body{
         
     }
     
+}
+.about{
+    max-width:1450px;
+    margin:0px;
+    margin-top: 80px;
+    @media screen and (max-width: 770px) {
+        margin-top:30px;
+    }
 }

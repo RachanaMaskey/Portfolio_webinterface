@@ -106,6 +106,105 @@
   }
 }
 
+.circle-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EDEEFF;
+}
+
+.top {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+}
+.top .circle {
+  width: 20px;
+  height: 20px;
+}
+
+.bottom {
+  position: absolute;
+  top: 800px;
+  left: 89%;
+}
+.bottom .circle {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 770px) {
+  .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .circle-box .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EDEEFF;
+  }
+  .top .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .bottom {
+    position: absolute;
+    top: 440px;
+    left: 92%;
+  }
+  .bottom .circle {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .circle-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .circle-box .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EDEEFF;
+  }
+  .top {
+    gap: 3px;
+    top: 80px;
+    left: 5px;
+  }
+  .top .circle {
+    width: 5px;
+    height: 5px;
+  }
+  .bottom {
+    position: absolute;
+    top: 225px;
+    left: 84%;
+    gap: 4px;
+  }
+  .bottom .circle {
+    width: 8px;
+    height: 8px;
+  }
+}
 .navbar {
   width: 90%;
   height: 60px;
@@ -594,14 +693,12 @@
 
 .aboutme {
   background-color: #1B1C37;
-  height: 1200px;
-  width: 1440px;
+  min-height: 1200px;
+  width: 100%;
   -webkit-clip-path: path("M1440,0 L1440,900 C1080,1173 360,621 0,900 L0,0 Z");
           clip-path: path("M1440,0 L1440,900 C1080,1173 360,621 0,900 L0,0 Z");
-  margin-left: -30px;
   padding: 0px;
-  position: relative;
-  align-items: center;
+  margin: auto;
 }
 .aboutme .about {
   color: white;
@@ -609,25 +706,22 @@
   font-size: 54px;
   font-weight: 600;
   padding-top: 50px;
-  margin-bottom: 0;
 }
 .aboutme .contents {
   width: 950px;
-  height: 280px;
-  position: absolute;
-  top: 0;
-  left: 160px;
+  min-height: 260px;
   background-color: white;
   border-radius: 60px;
-  margin-top: 380px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px 90px 0px 90px;
+  margin: auto;
+  margin-top: 270px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .aboutme .contents img {
-  width: 118px;
-  height: 118px;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
 }
 .aboutme .contents .icon-content {
   display: flex;
@@ -636,9 +730,8 @@
 }
 .aboutme .contents .percentage {
   font-size: 44px;
-  margin: 0px;
   color: black;
-  font-weight: 700;
+  font-weight: 900;
 }
 .aboutme .contents p {
   font-size: 30px;
@@ -648,13 +741,10 @@
 }
 .aboutme .contents .colombian {
   width: 300px;
-  height: 403px;
+  height: 370px;
   background: linear-gradient(to right, #B224EF, #7579FF);
   border-radius: 80px 80px 60px 60px;
-  margin-top: 0px;
-  position: absolute;
-  top: -47%;
-  left: 400px;
+  margin-top: -170px;
   text-align: center;
 }
 .aboutme .contents .colombian span {
@@ -666,66 +756,30 @@
 }
 .aboutme .contents .colombian img {
   width: 100%;
-  height: 223px;
-}
-.aboutme .circle-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: -moz-max-content;
-  width: max-content;
-}
-.aboutme .circle-box .circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #EDEEFF;
-}
-.aboutme .top {
-  position: absolute;
-  top: 100px;
-  left: -50px;
-}
-.aboutme .top .circle {
-  width: 20px;
-  height: 20px;
-}
-.aboutme .bottom {
-  position: absolute;
-  top: 800px;
-  left: 89%;
-}
-.aboutme .bottom .circle {
-  width: 25px;
-  height: 25px;
+  height: 200px;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   .aboutme {
-    height: 750px;
-    width: 768px;
-    margin-right: -5px;
+    min-height: 600px;
+    width: 100%;
     -webkit-clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
             clip-path: path("M768,0 L768,500 C576,600 192,400 0,500 L0,0 Z");
   }
   .aboutme .about {
     font-size: 50px;
+    padding-top: 30px;
   }
   .aboutme .contents {
     width: 550px;
-    height: 160px;
-    left: 100px;
+    min-height: 160px;
     border-radius: 40px;
-    margin-top: 240px;
+    margin-top: 120px;
     padding: 0px 30px 0px 30px;
   }
   .aboutme .contents .icon-content img {
     width: 50px;
     height: 50px;
-    margin: 15px 0px 0px 25px;
-  }
-  .aboutme .contents .icon-content .first {
-    margin: 15px 0px 0px 40px;
   }
   .aboutme .contents img {
     width: 50px;
@@ -742,45 +796,18 @@
     width: 150px;
     height: 203px;
     border-radius: 60px 60px 40px 40px;
-    top: -57%;
+    margin-top: -80px;
     left: 225px;
   }
   .aboutme .contents .colombian img {
     width: 100%;
     height: 105px;
   }
-  .aboutme .circle-box {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  .aboutme .circle-box .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #EDEEFF;
-  }
-  .aboutme .top .circle {
-    width: 15px;
-    height: 15px;
-  }
-  .aboutme .bottom {
-    position: absolute;
-    top: 440px;
-    left: 92%;
-  }
-  .aboutme .bottom .circle {
-    width: 15px;
-    height: 15px;
-  }
 }
 @media screen and (max-width: 430px) {
   .aboutme {
     width: 430px;
-    height: 580px;
+    min-height: 550px;
     -webkit-clip-path: path("M430,0 L430,250 C330,350 100,200 0,280 L0,0 Z");
             clip-path: path("M430,0 L430,250 C330,350 100,200 0,280 L0,0 Z");
   }
@@ -790,19 +817,14 @@
   }
   .aboutme .contents {
     width: 250px;
-    height: 90px;
-    left: 60px;
+    min-height: 90px;
     border-radius: 18px;
-    margin-top: 125px;
+    margin-top: 70px;
     padding: 0px 30px 0px 30px;
   }
   .aboutme .contents .icon-content img {
     width: 25px;
     height: 25px;
-    margin: 15px 0px 0px 10px;
-  }
-  .aboutme .contents .icon-content .first {
-    margin: 15px 0px 0px 20px;
   }
   .aboutme .contents img {
     width: 50px;
@@ -810,55 +832,19 @@
   }
   .aboutme .contents .percentage {
     font-size: 12px;
-    text-align: center;
   }
   .aboutme .contents p {
     font-size: 10px;
   }
   .aboutme .contents .colombian {
     width: 90px;
-    height: 115px;
+    height: 110px;
     border-radius: 28px 28px 20px 20px;
-    top: -50%;
-    left: 110px;
+    margin-top: -40px;
   }
   .aboutme .contents .colombian img {
     width: 100%;
     height: 55px;
-    margin-top: -10px;
-  }
-  .aboutme .circle-box {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  .aboutme .circle-box .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #EDEEFF;
-  }
-  .aboutme .top {
-    gap: 3px;
-    top: 80px;
-    left: 5px;
-  }
-  .aboutme .top .circle {
-    width: 5px;
-    height: 5px;
-  }
-  .aboutme .bottom {
-    position: absolute;
-    top: 225px;
-    left: 84%;
-    gap: 4px;
-  }
-  .aboutme .bottom .circle {
-    width: 8px;
-    height: 8px;
   }
 }
 
@@ -1226,6 +1212,8 @@ footer .left {
 }
 body {
   font-family: "Poppins";
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
@@ -1245,5 +1233,16 @@ body {
 @media screen and (max-width: 431px) {
   .container {
     margin: 0px;
+  }
+}
+
+.about {
+  max-width: 1450px;
+  margin: 0px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 770px) {
+  .about {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
