@@ -1,25 +1,20 @@
 .navbar{
-    width:1255px;
+    width:90%;
     height:60px;
     color:white;
     background-color: #1B1C37;
     border-radius: 14.42px;
-    margin:0px 40px 0px 40px;
-    padding:0px 20px 0px 20px;
+    margin: 0px 55px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     font-size:15px;
-    position: fixed;
-    top: 60px;
+    align-items: center;
+    position: sticky;
+    top: 50px;
     z-index: 10;
     .menu-bar{
         display:none;
-    }
-    .nav-list{
-        display:flex;
-        flex-direction: row;
-        gap:40px;
-        justify-content: space-between;
     }
     ul{
         text-decoration: none;
@@ -27,85 +22,68 @@
     }
     .nav-name{
         display:flex;
-        gap:10px;
-        margin-left:21px;
+        gap:20px;
+        align-items: center;
     }
     figure{
         align-items: center;
         margin:0px;
-        margin-top:16px;
     }
     span{
-        margin:0px;
-        margin-top:20px;
         cursor: pointer;
     }
     .nav-items{
         display:flex;
-        gap:40px;
+        gap:20px;
     }
     .nav-items span:hover{
         text-decoration: underline;
         text-decoration-color:#7579FF;    
         text-decoration-thickness: 4px;
-        text-underline-offset: 15px; 
+        text-underline-offset: 95%; 
     }
     button{
         background-color:#7579FF;
-        width: 150px;
+        width: 100%;
         height: 40px;
         border-radius: 8.65px;
         border: none;
         color: white;
         cursor: pointer;
-        margin-top: 10px;
-        margin-right: 36px;
+        &:hover{
+            scale: 1.1;
+        }
     }
-    @media screen and (max-width: 768px) {
-        width:655px;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    @media screen and (max-width: 770px) {
         height:55px;
-        margin:0px 20px 0px 10px;
-        padding:0px 10px 0px 10px;
+        margin: 0px 10px;
+        padding: 0px 10px;
         font-size: 12px;
-        position: fixed;
         top: 40px;
-        z-index: 10;
         .nav-list{
             gap:10px;
         }
         .nav-name{
             gap:7px;
-            margin-left:10px;
-        }
-        figure{
-            margin-top:14px;
-        }
-        span{
-            margin-top:18px;
         }
         .nav-items{
             gap:15px;
         }
-        .nav-items span:hover{
-            text-underline-offset: 10px; 
-        }
         button{
-            width: 100px;
             height: 30px;
             border-radius: 5.65px;
-            margin-top: 12px;
-            margin-right: 16px;
             font-size: 12px;
         }
     } 
-    @media screen and (max-width: 430px){
-        width:370px;
+    @media screen and (max-width: 431px){
         height:40px;
-        margin:0px 60px 0px -10px;
-        padding:0px 10px 0px 0px;
         border-radius: 8px;
         font-size:12px;
-        top: 50px;
+        top: 40px;
         .menu-bar{
             display:block;
             i{
@@ -113,23 +91,17 @@
                 font-weight: bold;
                 color:white;
             }
+            button{
+                padding: 0px;
+            }
         }
         button{
             background-color:transparent;
-            width: 50px;
             height: 40px;
             border-radius:0px;
-            margin-top: 0px;
-            margin-right: 0px;
-        }
-        .nav-name{
-            margin-left:21px;
         }
         figure{
-            margin-top:7px;
-        }
-        span{
-            margin-top:12px;
+            margin-top:5px;
         }
         .nav-items{
             display:none;

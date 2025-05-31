@@ -1,5 +1,5 @@
 .top-content {
-    padding-top:10px;
+    position: relative;
     .circle-box {
         @include circle-pattern;
 
@@ -12,17 +12,18 @@
     }
     .left{
         position: absolute;
-        top: 550px;
-        left:-115px;
+        z-index:0;
+        top: 480px;
+        left:-9%;
         
     }
     .right{
         position: absolute;
-        top: 140px;
-        left:1335px;
-        // bottom:10px;
+        z-index:0;
+        top: 90px;
+        right:-6%;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 770px) {
         .circle-box {
             display: none;
         }

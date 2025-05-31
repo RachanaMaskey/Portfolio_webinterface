@@ -1,91 +1,101 @@
 .banner{
-    margin-top:90px; 
+    margin-top:7%; 
     display: flex;
     flex-direction: row;
-    figure{
-         margin-right: auto;
-    }
-    img{
-        width: 750px;
-        height:500px;
-    }
     h2{
-        font-size: 76px;
+        font-size: 86px;
+        margin: 0px;
+    }
+    p{
+        width: 80%;
+        margin:5% 0px;
     }
     .banner-content{
-        margin-top:30px;
-        margin-left: 70px;
+        width:55%;
+        height:100%;
+    }
+    .banner-button{
+        width:100%;
+        min-height:175px;
+        position: relative;
     }
     button{
         background:linear-gradient(to right,#B224EF, #7579FF);
-        width: 200px;
+        min-width: 200px;
         height: 56px;
         border-radius: 8.65px;
         border: none;
         color: white;
         cursor: pointer;
-        margin-top: 10px;
-        margin-right: 36px;
-        padding:16px 30px 16px 30px;
+        padding: 0px;
         font-size: 18px;
     }
-    i{
-        margin-left:10px;
+    .arrow {
+        position: absolute;
+        top:0%;
+        left: 40%;
     }
     .arrow img{
         width:187px;
         height:187px;
         transform: rotate(5deg)
     }
-    .banner-button{
-        display: flex;
-        flex-direction: row;
+     figure{
+        margin: 0px;
+        width:45%;
+    }
+    img{
+        width: 100%;
+        min-height:90%;
+        margin: 0px;
+
     }
     @media screen and (max-width: 768px) {
-        margin-top:30px; 
+        width:100%;
+        margin-top:15%;
+        .banner-content{
+            width:80%;
+        }
         figure{
             display: none;
         }
         h2{
+            width:80%;
             font-size: 66px;
         }
-        .banner-content{
-            width:500px;
-
+        .arrow {
+            top:-5%;
+            left: 35%;
         }
     }
-    @media screen and (max-width: 430px) {
-        margin-top:30px; 
+    @media screen and (max-width: 430px) { 
+        width:100%;
+        margin-top:20%;
         display: flex;
         flex-direction: row;
+        .banner-content{
+            width:90%;
+        }
         h2{
+            width:90%;
             font-size: 50px;
         }
         p{
             font-size: 10px;
-            margin:0px;
-        }
-        .banner-content{
-            width:275px;
-            margin-top:30px;
-            margin-left: 20px;
         }
         button{
-            width: 180px;
-            height: 40px;
+            min-width: 100px;
+            height:45px;
             border-radius: 8.65px;
-            margin-top: 30px;
-            margin-right: 20px;
-            padding:10px 30px 10px 25px;
             font-size: 11px;
         }
-        i{
-            margin-left:5px;
+        .arrow {
+            top:-3%;
+            left: 30%;
         }
         .arrow img{
             width:107px;
             height:107px;
-            margin-top:20px;
         } 
     }
 }

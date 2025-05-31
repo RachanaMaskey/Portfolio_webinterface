@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .top-content {
-  padding-top: 10px;
+  position: relative;
 }
 .top-content .circle-box {
   display: grid;
@@ -20,43 +20,40 @@
 }
 .top-content .left {
   position: absolute;
-  top: 550px;
-  left: -115px;
+  z-index: 0;
+  top: 480px;
+  left: -9%;
 }
 .top-content .right {
   position: absolute;
-  top: 140px;
-  left: 1335px;
+  z-index: 0;
+  top: 90px;
+  right: -6%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .top-content .circle-box {
     display: none;
   }
 }
 
 .navbar {
-  width: 1255px;
+  width: 90%;
   height: 60px;
   color: white;
   background-color: #1B1C37;
   border-radius: 14.42px;
-  margin: 0px 40px 0px 40px;
-  padding: 0px 20px 0px 20px;
+  margin: 0px 55px;
+  padding: 0px 20px;
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  position: fixed;
-  top: 60px;
+  align-items: center;
+  position: sticky;
+  top: 50px;
   z-index: 10;
 }
 .navbar .menu-bar {
   display: none;
-}
-.navbar .nav-list {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  justify-content: space-between;
 }
 .navbar ul {
   text-decoration: none;
@@ -64,88 +61,71 @@
 }
 .navbar .nav-name {
   display: flex;
-  gap: 10px;
-  margin-left: 21px;
+  gap: 20px;
+  align-items: center;
 }
 .navbar figure {
   align-items: center;
   margin: 0px;
-  margin-top: 16px;
 }
 .navbar span {
-  margin: 0px;
-  margin-top: 20px;
   cursor: pointer;
 }
 .navbar .nav-items {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .navbar .nav-items span:hover {
   text-decoration: underline;
   text-decoration-color: #7579FF;
   text-decoration-thickness: 4px;
-  text-underline-offset: 15px;
+  text-underline-offset: 95%;
 }
 .navbar button {
   background-color: #7579FF;
-  width: 150px;
+  width: 100%;
   height: 40px;
   border-radius: 8.65px;
   border: none;
   color: white;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 36px;
 }
-@media screen and (max-width: 768px) {
+.navbar button:hover {
+  scale: 1.1;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 770px) {
   .navbar {
-    width: 655px;
     height: 55px;
-    margin: 0px 20px 0px 10px;
-    padding: 0px 10px 0px 10px;
+    margin: 0px 10px;
+    padding: 0px 10px;
     font-size: 12px;
-    position: fixed;
     top: 40px;
-    z-index: 10;
   }
   .navbar .nav-list {
     gap: 10px;
   }
   .navbar .nav-name {
     gap: 7px;
-    margin-left: 10px;
-  }
-  .navbar figure {
-    margin-top: 14px;
-  }
-  .navbar span {
-    margin-top: 18px;
   }
   .navbar .nav-items {
     gap: 15px;
   }
-  .navbar .nav-items span:hover {
-    text-underline-offset: 10px;
-  }
   .navbar button {
-    width: 100px;
     height: 30px;
     border-radius: 5.65px;
-    margin-top: 12px;
-    margin-right: 16px;
     font-size: 12px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
   .navbar {
-    width: 370px;
     height: 40px;
-    margin: 0px 60px 0px -10px;
-    padding: 0px 10px 0px 0px;
     border-radius: 8px;
     font-size: 12px;
-    top: 50px;
+    top: 40px;
   }
   .navbar .menu-bar {
     display: block;
@@ -155,22 +135,16 @@
     font-weight: bold;
     color: white;
   }
+  .navbar .menu-bar button {
+    padding: 0px;
+  }
   .navbar button {
     background-color: transparent;
-    width: 50px;
     height: 40px;
     border-radius: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-  }
-  .navbar .nav-name {
-    margin-left: 21px;
   }
   .navbar figure {
-    margin-top: 7px;
-  }
-  .navbar span {
-    margin-top: 12px;
+    margin-top: 5px;
   }
   .navbar .nav-items {
     display: none;
@@ -181,97 +155,107 @@
 }
 
 .banner {
-  margin-top: 90px;
+  margin-top: 7%;
   display: flex;
   flex-direction: row;
 }
-.banner figure {
-  margin-right: auto;
-}
-.banner img {
-  width: 750px;
-  height: 500px;
-}
 .banner h2 {
-  font-size: 76px;
+  font-size: 86px;
+  margin: 0px;
+}
+.banner p {
+  width: 80%;
+  margin: 5% 0px;
 }
 .banner .banner-content {
-  margin-top: 30px;
-  margin-left: 70px;
+  width: 55%;
+  height: 100%;
+}
+.banner .banner-button {
+  width: 100%;
+  min-height: 175px;
+  position: relative;
 }
 .banner button {
   background: linear-gradient(to right, #B224EF, #7579FF);
-  width: 200px;
+  min-width: 200px;
   height: 56px;
   border-radius: 8.65px;
   border: none;
   color: white;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 36px;
-  padding: 16px 30px 16px 30px;
+  padding: 0px;
   font-size: 18px;
 }
-.banner i {
-  margin-left: 10px;
+.banner .arrow {
+  position: absolute;
+  top: 0%;
+  left: 40%;
 }
 .banner .arrow img {
   width: 187px;
   height: 187px;
   transform: rotate(5deg);
 }
-.banner .banner-button {
-  display: flex;
-  flex-direction: row;
+.banner figure {
+  margin: 0px;
+  width: 45%;
+}
+.banner img {
+  width: 100%;
+  min-height: 90%;
+  margin: 0px;
 }
 @media screen and (max-width: 768px) {
   .banner {
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 15%;
+  }
+  .banner .banner-content {
+    width: 80%;
   }
   .banner figure {
     display: none;
   }
   .banner h2 {
+    width: 80%;
     font-size: 66px;
   }
-  .banner .banner-content {
-    width: 500px;
+  .banner .arrow {
+    top: -5%;
+    left: 35%;
   }
 }
 @media screen and (max-width: 430px) {
   .banner {
-    margin-top: 30px;
+    width: 100%;
+    margin-top: 20%;
     display: flex;
     flex-direction: row;
   }
+  .banner .banner-content {
+    width: 90%;
+  }
   .banner h2 {
+    width: 90%;
     font-size: 50px;
   }
   .banner p {
     font-size: 10px;
-    margin: 0px;
-  }
-  .banner .banner-content {
-    width: 275px;
-    margin-top: 30px;
-    margin-left: 20px;
   }
   .banner button {
-    width: 180px;
-    height: 40px;
+    min-width: 100px;
+    height: 45px;
     border-radius: 8.65px;
-    margin-top: 30px;
-    margin-right: 20px;
-    padding: 10px 30px 10px 25px;
     font-size: 11px;
   }
-  .banner i {
-    margin-left: 5px;
+  .banner .arrow {
+    top: -3%;
+    left: 30%;
   }
   .banner .arrow img {
     width: 107px;
     height: 107px;
-    margin-top: 20px;
   }
 }
 
@@ -1318,5 +1302,20 @@ body {
 }
 
 .container {
-  margin: 20px;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0px 70px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 770px) {
+  .container {
+    margin: 0px 50px;
+  }
+}
+@media screen and (max-width: 431px) {
+  .container {
+    margin: 0px 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
