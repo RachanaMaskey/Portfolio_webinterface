@@ -1,8 +1,8 @@
 .skills{
     // margin-top:30px;
     // margin:30px 30px;
-    height:auto;
-    position: relative;
+    // height:auto;
+    // position: relative;
     .heading{
          h3{
             background: linear-gradient(to right, #B224EF, #7579FF);
@@ -28,6 +28,7 @@
         gap: 2rem;
         padding:30px;
         position: relative;
+        z-index: 9;
         .progress-90{
             .progress-circle-90 {
             width: 200px;
@@ -168,9 +169,9 @@
         }
        
     }
-    @media screen and (max-width: 768px) {
-        margin-left:10px;
-    }
+    // @media screen and (max-width: 768px) {
+    //     margin-left:10px;
+    // }
     @media screen and (max-width: 430px) {
         margin: 0px;
         .heading{

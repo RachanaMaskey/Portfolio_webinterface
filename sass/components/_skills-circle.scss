@@ -1,27 +1,6 @@
 .skills-circle{
     .circle-box {
         @include circle-pattern;
-        position: absolute;
-        top: 55px;
-        left: -150px;
-        z-index: 0;
-        gap: 5px;
-        padding: 20px;
-        .circle {
-        @include circle-shape;
-        width: 15px;
-        height: 15px;
-        background-color: #EDEEFF;
-        }
-    }
-      .hr-line{
-        @include hr-line;
-        width: 1300px;
-        margin:20px 0px;
-        
-    }
-    .circle-box {
-        @include circle-pattern;
 
         .circle {
         @include circle-shape;
@@ -32,24 +11,22 @@
     }
     .left{
         position: absolute;
-        top: 650px;
-        left:-195px;
+        z-index: 0;
+        top: 195%;
+        left:-90px;
         
     }
     .right{
         position: absolute;
-        top: 400px;
-        left:1200px;
-        // bottom:10px;
+        z-index: 0;
+        top: 152%;
+        right:-105px;
     }
     @media screen and (max-width: 770px) {
-         .hr-line{
-            width: 650px;          
-        }
         .left{
             position: absolute;
-            top: 720px;
-            left:-155px;
+            top: 122%;
+            left:-10%;
             
         }
         .right{

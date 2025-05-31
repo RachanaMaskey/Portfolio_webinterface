@@ -43,34 +43,6 @@
   gap: 10px;
   width: -moz-max-content;
   width: max-content;
-  position: absolute;
-  top: 55px;
-  left: -150px;
-  z-index: 0;
-  gap: 5px;
-  padding: 20px;
-}
-.skills-circle .circle-box .circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background-color: #EDEEFF;
-}
-.skills-circle .hr-line {
-  background-color: #EDEEFF;
-  height: 1px;
-  width: 1300px;
-  margin: 20px 0px;
-}
-.skills-circle .circle-box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: -moz-max-content;
-  width: max-content;
 }
 .skills-circle .circle-box .circle {
   width: 20px;
@@ -82,22 +54,21 @@
 }
 .skills-circle .left {
   position: absolute;
-  top: 650px;
-  left: -195px;
+  z-index: 0;
+  top: 195%;
+  left: -90px;
 }
 .skills-circle .right {
   position: absolute;
-  top: 400px;
-  left: 1200px;
+  z-index: 0;
+  top: 152%;
+  right: -105px;
 }
 @media screen and (max-width: 770px) {
-  .skills-circle .hr-line {
-    width: 650px;
-  }
   .skills-circle .left {
     position: absolute;
-    top: 720px;
-    left: -155px;
+    top: 122%;
+    left: -10%;
   }
   .skills-circle .right {
     display: none;
@@ -363,10 +334,6 @@
   }
 }
 
-.skills {
-  height: auto;
-  position: relative;
-}
 .skills .heading h3 {
   background: linear-gradient(to right, #B224EF, #7579FF);
   -webkit-background-clip: text;
@@ -390,6 +357,7 @@
   gap: 2rem;
   padding: 30px;
   position: relative;
+  z-index: 9;
 }
 .skills .progress-bar .progress-90 .progress-circle-90 {
   width: 200px;
@@ -504,11 +472,6 @@
 }
 .skills .progress-bar .progress-70 .caption {
   text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .skills {
-    margin-left: 10px;
-  }
 }
 @media screen and (max-width: 430px) {
   .skills {
@@ -1268,6 +1231,7 @@ body {
 .container {
   max-width: 1350px;
   width: 100%;
+  min-height: 500px;
   margin: 0px 70px;
   overflow: hidden;
   position: relative;
